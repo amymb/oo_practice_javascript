@@ -2,14 +2,14 @@ var ShoppingList = require('../shopping_list')
 var Item = require('../item')
 
 describe('Shopping List', function(){
-  var list = new ShoppingList()
+  var list = new ShoppingList(20)
 
-  it('lists contents is instantiated as empty', function(){
+  it('shopping list contents are instantiated as empty', function(){
     expect(list.contents).toEqual([]);
   })
 
   it('has a size', function(){
-    expect(list.budget).toEqual(undefined);
+    expect(list.budget).toEqual(20);
   })
 })
 
