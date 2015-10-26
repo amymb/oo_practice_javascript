@@ -8,7 +8,7 @@ describe('Shopping List', function(){
     expect(list.contents).toEqual([]);
   })
 
-  it('has a size', function(){
+  it('has a budget', function(){
     expect(list.budget).toEqual(20);
   })
 })
@@ -44,7 +44,7 @@ describe('#addItem', function(){
 describe('#total', function(){
   var list;
   beforeEach(function(){
-    list = new ShoppingList(20);
+    list = new ShoppingList(40);
     bananas = new Item("bananas", 8)
     yogurt = new Item("yogurt", 7)
     bread = new Item("bread", 2)
